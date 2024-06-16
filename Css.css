@@ -191,6 +191,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  animation: slideInFromRight 1s ease-out;
 }
 
 .menu-item {
