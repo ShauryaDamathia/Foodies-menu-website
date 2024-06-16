@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   const sections = document.querySelectorAll(".section");
 
-  // Toggle navigation menu
   navToggle.addEventListener("click", function () {
     links.classList.toggle("show");
   });
 
-  // Function to switch sections
   function switchSection(sectionId) {
     sections.forEach(section => {
       if (section.id === sectionId) {
@@ -24,16 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event listener for navigation links
   navLinks.forEach(link => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const sectionId = this.getAttribute("data-section");
       switchSection(sectionId);
-      links.classList.remove("show"); // Hide the menu on mobile
+      links.classList.remove("show"); 
     });
   });
 
-  // Show home section by default
   switchSection("home");
 });
