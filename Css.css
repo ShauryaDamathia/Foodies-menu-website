@@ -1,18 +1,15 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
   color: #333;
 }
 
-/* Navbar Styling */
 .navbar {
   background-color: #02204f;
   color: #fff;
@@ -23,10 +20,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999; /* Ensure it's above other elements */
+  z-index: 9999; 
 }
 
-/* Navbar Link Styling */
 .nav-logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -100,14 +96,13 @@ body {
   }
 }
 
-/* Section Styling */
 .section {
   display: none;
   opacity: 0;
   transition: opacity 1s, transform 1s;
   padding: 20px;
-  min-height: calc(100vh - 50px); /* Adjust to account for navbar height */
-  margin-top: 50px; /* Adjust to account for navbar height */
+  min-height: calc(100vh - 50px); 
+  margin-top: 50px; 
 }
 
 .section.active {
@@ -116,7 +111,6 @@ body {
   transform: translateY(0);
 }
 
-/* Home Section Styling */
 .home {
   background: url('https://wallpaperaccess.com/full/2443577.jpg') no-repeat center center/cover;
   min-height: calc(100vh - 50px); 
@@ -147,7 +141,6 @@ body {
   display: inline-block; 
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -168,7 +161,6 @@ body {
   }
 }
 
-/* CTA Button Styling */
 .cta-button {
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -301,8 +293,8 @@ body {
 }
 
 @keyframes blink {
-  from { border-color: transparent; } /* Cursor is hidden */
-  to { border-color: orange; } /* Cursor is visible */
+  from { border-color: transparent; } 
+  to { border-color: orange; } 
 }
 
 @keyframes slideInFromRight {
